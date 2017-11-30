@@ -1,5 +1,3 @@
-#### Order Service Release Notes:
-
 ### 30 November 2017
 ## Method Create
 ## Versions 
