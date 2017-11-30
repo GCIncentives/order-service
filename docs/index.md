@@ -1,9 +1,14 @@
-### Order Service Release Notes:
+#### Order Service Release Notes:
 
-## 30 November 2017
-* Adding of Enhanced Order information in Retrieve Order Status
+### 30 November 2017
+## Method Create
+## Versions 
+* V2 http://business2.giftcertificates.com/2/0 
+* V1 http://business1.giftcertificates.com/2/0
 
-When retrieving an order status there is now an EnhancedStatus entity that shows more detail about the current status of an order during processing.  
+## Enhancement
+Enhanced Resultwhen retrieving an order status. EnhancedStatus entity now shows more detail about the current status of an order during processing.  
+
 Previous version: 
 
 ```xml
@@ -23,14 +28,13 @@ Previous version:
 
 New enahanced entity added and can be accessed if needed.  This is an addition and is not intended to break any existing clients.
 
-New fields
 * AcknowledgeMentId - to be used in the future as a reference identifier
 * StatusCode - Status code indicating status of order submission.  StatusCode will follow the guidelines layed out according to the HTTP Specifcation status codes.  For the Create method the following codes will apply:
     * 201 - Accepted
     * 400 - Bad Request - any issues related to system input information
     * 500 - Internal Server Error - internal errors and the AcknowledgeMentId can be used to relay information about the submitted     request
     
-* StatusMessage
+* StatusMessage - a helpful message to indicate any extra information about order submission.
 
 ```xml
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
