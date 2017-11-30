@@ -4,6 +4,7 @@
 * Adding of Enhanced Order information in Retrieve Order Status
 When retrieving an order status there is now an EnhancedStatus entity that shows more detail about the current status of an order during processing.  
 Previous version: 
+
 ```xml
 
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
@@ -17,7 +18,9 @@ Previous version:
         </CreateResponse>
     </soap:Body>
 </soap:Envelope>
+
 ```
+
 New enahanced entity added and can be accessed if needed.  This is an addition and is not intended to break any existing clients.
 
 ```xml
