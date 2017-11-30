@@ -24,9 +24,7 @@ Previous version:
     </soap:Body>
 </soap:Envelope>
 ```
-
-
-New enahanced entity added and can be accessed if needed.  This is an addition and is not intended to break any existing clients.
+New Version Result
 
 * AcknowledgeMentId - to be used in the future as a reference identifier
 * StatusCode - Status code indicating status of order submission.  StatusCode will follow the guidelines layed out according to the HTTP Specifcation status codes.  For the Create method the following codes will apply:
