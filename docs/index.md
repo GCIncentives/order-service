@@ -3,8 +3,8 @@
 ### 30 November 2017
 ## Method Create
 ## Versions 
-* V2 http://business2.giftcertificates.com/2/0 
-* V1 http://business1.giftcertificates.com/2/0
+* V2 http://business2.giftcertificates.com/2/0/WSOrder.asmx
+* V1 https://business1.giftcertificates.com/webservice/wsorder.asmx
 
 ## Enhanced Result when submitting an order.
 EnhancedStatus entity now shows more detail about the current status of an order during processing.  
