@@ -26,13 +26,6 @@ Previous version:
 ```
 New Version Result
 
-* AcknowledgeMentId - to be used in the future as a reference identifier
-* StatusCode - Status code indicating status of order submission.  StatusCode will follow the guidelines layed out according to the [HTTP Specifcation status codes](https://tools.ietf.org/html/rfc2616).  For the Create method the following codes will apply:
-    * 201 - Accepted
-    * 400 - Bad Request - any issues related to system input information
-    * 500 - Internal Server Error - internal errors and the AcknowledgeMentId can be used to relay information about the submitted     request
-    
-* StatusMessage - a helpful message to indicate any extra information about order submission.
 
 ```xml
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
@@ -52,5 +45,14 @@ New Version Result
     </soap:Body>
 </soap:Envelope>
 ```
+
+* AcknowledgeMentId - to be used in the future as a reference identifier
+* StatusCode - Status code indicating status of order submission.  StatusCode will follow the guidelines layed out according to the [HTTP Specifcation status codes](https://tools.ietf.org/html/rfc2616).  For the Create method the following codes will apply:
+    * 201 - Accepted
+    * 400 - Bad Request - any issues related to system input information
+    * 500 - Internal Server Error - internal errors and the AcknowledgeMentId can be used to relay information about the submitted     request
+    
+* StatusMessage - a helpful message to indicate any extra information about order submission.
+
 
 
