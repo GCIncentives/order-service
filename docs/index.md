@@ -25,6 +25,10 @@ Previous version:
 
 New enahanced entity added and can be accessed if needed.  This is an addition and is not intended to break any existing clients.
 
+New fields
+* AcknowledgeMentId
+* StatusCode
+* StatusMessage
 ```xml
 
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
