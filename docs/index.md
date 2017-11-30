@@ -2,6 +2,7 @@
 
 ## 30 November 2017
 * Adding of Enhanced Order information in Retrieve Order Status
+
 When retrieving an order status there is now an EnhancedStatus entity that shows more detail about the current status of an order during processing.  
 Previous version: 
 
@@ -35,8 +36,9 @@ New enahanced entity added and can be accessed if needed.  This is an addition a
                 <ConfirmationNumber>3341700182958</ConfirmationNumber>
             </CreateResult>
             <EnhancedStatus>
-                  <acknowledgement></acknowledgement>
-                  <Status></Status>
+                  <AcknowledgeMentId></acknowledgementId>
+                  <StatusMessage></StatusMessage>
+                  <StatusCode></StatusCode>
             </EnhancedStatus>
         </CreateResponse>
     </soap:Body>
