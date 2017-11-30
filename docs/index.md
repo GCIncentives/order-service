@@ -42,8 +42,8 @@ New Version Result
                 <OrderID>3_INTER00392_a15b0454d5184e1f85b5af7a5f9c22b6</OrderID>
                 <ConfirmationNumber>3341700182958</ConfirmationNumber>
                 <AcknowledgeMentId></acknowledgementId>
-                <StatusMessage></StatusMessage>
                 <StatusCode></StatusCode>
+                <StatusMessage></StatusMessage>
             </CreateResult>
         </CreateResponse>
     </soap:Body>
