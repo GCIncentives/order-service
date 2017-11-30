@@ -17,13 +17,19 @@ Previous version:
         <CreateResponse xmlns="http://www.giftcertificates.com/WebService/">
             <CreateResult>
                 <OrderCreateResultCode></OrderCreateResultCode>
-                <OrderID>Client Order Number</OrderID>
-                <ConfirmationNumber>Giftcertificates generated order number</ConfirmationNumber>
+                <OrderID></OrderID>
+                <ConfirmationNumber></ConfirmationNumber>
             </CreateResult>
         </CreateResponse>
     </soap:Body>
 </soap:Envelope>
 ```
+
+* OrderCreateResultCode - String representing state of order
+* OrderID - Client generated identifier
+* ConfirmationNumber - Giftcertificates generated order number
+
+
 New Version Result
 
 
