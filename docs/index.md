@@ -6,8 +6,8 @@
 * V2 http://business2.giftcertificates.com/2/0 
 * V1 http://business1.giftcertificates.com/2/0
 
-## Enhancement
-Enhanced Result when submitting an order. EnhancedStatus entity now shows more detail about the current status of an order during processing.  
+## Enhanced Result when submitting an order.
+EnhancedStatus entity now shows more detail about the current status of an order during processing.  
 
 Previous version: 
 
