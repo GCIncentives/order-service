@@ -7,7 +7,6 @@ When retrieving an order status there is now an EnhancedStatus entity that shows
 Previous version: 
 
 ```xml
-
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <soap:Body>
         <CreateResponse xmlns="http://www.giftcertificates.com/WebService/">
@@ -19,7 +18,6 @@ Previous version:
         </CreateResponse>
     </soap:Body>
 </soap:Envelope>
-
 ```
 
 
@@ -29,8 +27,8 @@ New fields
 * AcknowledgeMentId
 * StatusCode
 * StatusMessage
-```xml
 
+```xml
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <soap:Body>
         <CreateResponse xmlns="http://www.giftcertificates.com/WebService/">
