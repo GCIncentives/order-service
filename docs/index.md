@@ -1,6 +1,6 @@
 ### 8 December 2017
 
-## Versions 
+## Affected Versions 
 * Production
     * V2 http://business2.giftcertificates.com/2/0/WSOrder.asmx
 * Stage
