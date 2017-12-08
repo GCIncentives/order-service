@@ -44,7 +44,7 @@ Previous OrderCreateResult:
 * ConfirmationNumber - Giftcertificates generated order number
 
 
-## Enhanced OrderCreateResult:  
+### Enhanced OrderCreateResult:  
 No modifications have been made to the existing fields that werer previously part of the OrderCreateResult - OrderCreateResultCode, OrderID and ConfirmationNumber and all messages and status' remain as in previous versions
 
 Enhanced properties:
