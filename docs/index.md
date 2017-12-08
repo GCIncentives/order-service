@@ -1,8 +1,12 @@
 ### 8 December 2017
 
 ## Versions 
-* V2 http://business2.giftcertificates.com/2/0/WSOrder.asmx
-* V1 https://business1.giftcertificates.com/webservice/wsorder.asmx
+* Production
+    * V2 http://business2.giftcertificates.com/2/0/WSOrder.asmx
+* Stage
+    * V2 http://cte2.giftcertificates.com/2/0/WSOrder.asmx
+
+
 
 ## Caching of ExternaOrder upon request
 ### Method: Create(ExternalOrder)
