@@ -8,11 +8,11 @@
 
 
 
-## Enhancement: Caching of ExternaOrder upon request
+## Enhancement: Caching of ExternalOrder upon request
 ### Method: Create(ExternalOrder)
 ### Enhancement Id: 10000 -7401
 
-There have been numerous cases of orders that have been submitted that have been lost in transit when indicating that receipt of an order has succeeded.  The Create method has been enhanced to guarantee that orders will not be lost upon receipt and will cached to an external cache mechanism.  This will guarantee that all orders will be received and processing of an order should happen within 2 minutes of receipt.  
+There have been numerous cases of orders that have been submitted that have been lost in transit when indicating that receipt of an order has succeeded.  The Create method has been enhanced to guarantee that orders will not be lost upon receipt and will be cached to an external cache mechanism.  This will guarantee that all orders will be received and processing of an order should happen within 2 minutes of receipt.  
 
 Two fields - EnhancedAcknowledgementIdentifier and EnhanceCacheIdentifier have been added to OrderCreateResult to help with processing of the order messages.  More on addition of Enhanced Fields in 
 
@@ -45,12 +45,12 @@ Previous OrderCreateResult:
 
 
 ### Enhanced OrderCreateResult:  
-No modifications have been made to the existing fields that werer previously part of the OrderCreateResult - OrderCreateResultCode, OrderID and ConfirmationNumber and all messages and status' remain as in previous versions
+No modifications have been made to the existing fields that were previously part of the OrderCreateResult - OrderCreateResultCode, OrderID and ConfirmationNumber and all messages and status' remain as in previous versions
 
 Enhanced properties:
 
     * EnhancedStatusMessage - additional information to help with understanding the actual state of an order
-    * EnhancedStatusCode - Status codes to follow the model of HTTP status codes.  This will be the direction of the GC API set moving  forward. StatusCode will follow the guidelines layed out according to the [HTTP Specifcation status codes](https://tools.ietf.org/html/rfc2616).  For the Create method the following codes will apply:
+    * EnhancedStatusCode - Status codes to follow the model of HTTP status codes.  This will be the direction of the GC API set moving  forward. StatusCode will follow the guidelines according to the [HTTP Specification status codes](https://tools.ietf.org/html/rfc2616).  For the Create method the following codes will apply:
            * 201 - Accepted
            * 400 - Bad Request - any issues related to system input information
            * 500 - Internal Server Error - internal errors and the AcknowledgeMentId can be used to relay information about the submitted     request
@@ -102,7 +102,7 @@ If an error should go happen and an order cannot be cached the following respons
 
 ## Note: Duplicate Order exceptions.
 ### Method: Create(ExternalOrder)
-The Create method will return an exception of 'Duplicate Order' when the Client order number has already been inserted into the system.  The current implementation does not allow for the duplication of the client order number so will return duplicate order indicating that the client has already submitted an order with this identifier.  
+The Create method will return an exception of 'Duplicate Order' when the Client order number has already been inserted into the system.  The current implementation does not allow for the duplication of the client order number so will throw a Duplicate Order exception indicating that the client has already submitted an order with this identifier.  
 
 NOTE: future releases will allow for resubmission of the client order number and is currently under prioritization.
 
