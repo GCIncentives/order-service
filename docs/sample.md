@@ -1,4 +1,5 @@
-## Sample code
+# Sample code
+## Language: C#
 ## Method: Create(ExternalOrder)
 ### Applies to Version http://cte2.giftcertificates.com/2/0/WSOrder.asmx and http://business2.giftcertificates.com/2/0/WSOrder.asmx
 
