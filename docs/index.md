@@ -125,6 +125,6 @@ NOTE: future releases will allow for resubmission of the client order number and
 ```
 
 
-[Client sample code]
+[Client sample code](sample.md)
 
 
