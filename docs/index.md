@@ -7,7 +7,8 @@
 ## Enhanced Result when submitting an order.
 EnhancedStatus entity now shows more detail about the current status of an order during processing.  
 
-Previous version: 
+Previous OrderCreateResult:
+
 
 ```xml
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
@@ -24,11 +25,16 @@ Previous version:
 ```
 
 * OrderCreateResultCode - String representing state of order
-* OrderID - Client generated identifier
+* OrderID - Client generated order identifier
 * ConfirmationNumber - Giftcertificates generated order number
 
 
-New Version Result
+## Enhanced OrderCreateResult:  
+No modifications have been made to the existing fields that werer previously part of the OrderCreateResult - OrderCreateResultCode, OrderID and ConfirmationNumber and all messages and status' remain as in previous versions
+
+Enhanced properties:
+    * EnhancedStatusMessage - additional information to help with understanding the actual state of an order
+    * EnhancedStatusCode - Status codes to follow the model of HTTP status codes.  This will be the direction of the GC API set moving forward
 
 
 ```xml
@@ -37,11 +43,13 @@ New Version Result
         <CreateResponse xmlns="http://www.giftcertificates.com/WebService/">
             <CreateResult>
                 <OrderCreateResultCode>Success</OrderCreateResultCode>
-                <OrderID>3_INTER00392_a15b0454d5184e1f85b5af7a5f9c22b6</OrderID>
-                <ConfirmationNumber>3341700182958</ConfirmationNumber>
-                <AcknowledgeMentId></acknowledgementId>
-                <StatusCode></StatusCode>
-                <StatusMessage></StatusMessage>
+                <ExternalEnhancedCreateResult>Unassigned</ExternalEnhancedCreateResult>
+                <OrderID>3ff7ba6c-5991-4df5-8921-7f2427708bf5</OrderID>
+                <ConfirmationNumber>3421701372247</ConfirmationNumber>
+                <AcknowledgementIdentifier>170c8394-f80a-46dd-9d21-8e27e433ca4d</AcknowledgementIdentifier>
+                <EnhancedStatusMessage>The order has been Accepted, currently it's in Submitted state. Order processing will be accomplished within 2 minutes of submission</EnhancedStatusMessage>
+                <EnhancedStatusCode>202</EnhancedStatusCode>
+                <EnhanceCacheIdentifier>829cfc9e-9e24-43c1-ae4f-b44edb9022ab</EnhanceCacheIdentifier>
             </CreateResult>
         </CreateResponse>
     </soap:Body>
