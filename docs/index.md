@@ -1,5 +1,5 @@
-### 30 November 2017
-## Method Create
+### 8 December 2017
+## Method: Create(ExternalOrder)
 ## Versions 
 * V2 http://business2.giftcertificates.com/2/0/WSOrder.asmx
 * V1 https://business1.giftcertificates.com/webservice/wsorder.asmx
