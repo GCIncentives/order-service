@@ -1,4 +1,7 @@
-sample code
+## Sample code
+## Method: Create(ExternalOrder)
+### Applies to Version http://cte2.giftcertificates.com/2/0/WSOrder.asmx and http://business2.giftcertificates.com/2/0/WSOrder.asmx
+
 ```
  static void Main(string[] args)
         {
@@ -39,7 +42,7 @@ sample code
             externalShipTo.Email = "Receiver Email Address";
             externalShipTo.ShipMethodID = 0;
             externalShipTo.OneTimeUseTemplate = new ExternalEmailTemplate();
-            externalShipTo.OneTimeUseTemplate.DigitalTemplateID = 374;
+            externalShipTo.OneTimeUseTemplate.DigitalTemplateID = INSERT TEMPLATE ID;
             externalShipTo.OneTimeUseTemplate.Subject = "Subject";
 
             ExternalShipTo[] externalShipTos = new ExternalShipTo[1];
