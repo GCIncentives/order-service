@@ -8,7 +8,7 @@
 
 
 
-## Caching of ExternaOrder upon request
+## Enhancement: Caching of ExternaOrder upon request
 ### Method: Create(ExternalOrder)
 ### Enhancement Id: 10000 -7401
 
@@ -16,7 +16,7 @@ There have been numerous cases of orders that have been submitted that have been
 
 Two fields - EnhancedAcknowledgementIdentifier and EnhanceCacheIdentifier have been added to OrderCreateResult to help with processing of the order messages.  More on addition of Enhanced Fields in 
 
-## Enhanced Result when submitting an order.
+## Enhancement: Enhanced Result when submitting an order.
 ### Method: Create(ExternalOrder)
 ### Enhancement Id: 10001- 7401
 
@@ -100,9 +100,11 @@ If an error should go happen and an order cannot be cached the following respons
 </soap:Envelope>
 ```
 
-## Note about Duplicate Order exceptions.
+## Note: Duplicate Order exceptions.
 ### Method: Create(ExternalOrder)
-The Create method will return an exception of 'Duplicate Order' when the Client order number has already been inserted into the system.  The current implementation does not allow for the duplication of the client order number.  
+The Create method will return an exception of 'Duplicate Order' when the Client order number has already been inserted into the system.  The current implementation does not allow for the duplication of the client order number so will return duplicate order indicating that the client has already submitted an order with this identifier.  
+
+NOTE: future releases will allow for resubmission of the client order number and is currently under prioritization.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
